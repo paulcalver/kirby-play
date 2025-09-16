@@ -2,6 +2,7 @@
 /site/cache/*
 /media/*
 /thumbs/*
+/site/sessions/*
 
 # Kirby accounts (users)
 # (ignore unless you want to track default/test accounts in Git)
