@@ -1,15 +1,7 @@
 title: Page
 
 
-
 sections:
-   content:
-      type: fields
-      fields:
-        intro:
-          label: Info
-          type: text
-          width: 2/3
    
    Images:
       type: files

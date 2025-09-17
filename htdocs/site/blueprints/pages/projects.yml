@@ -5,8 +5,9 @@ sections:
   drafts:
     type: pages
     status: draft
-    layout: cardlets
+    layout: list
     templates: project
+    
   listed:
     type: pages
     status: listed

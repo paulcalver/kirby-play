@@ -16,5 +16,8 @@ htdocs/site/accounts/
 # Editor & OS junk
 .DS_Store
 .nova/
-_PHP Server.txt
+/-
 Thumbs.db
+
+
+

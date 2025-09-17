@@ -1,5 +1,6 @@
 title: Site
 
+
 sections:
      content:
        type: fields
@@ -12,6 +13,6 @@ sections:
        label: Pages
        layout: list
        templates:
-        - projects   # only show pages using the "page" template
+        - projects 
      
     
