@@ -1,5 +1,17 @@
 title: Site
 
 sections:
-  pages:
-    type: pages
+     content:
+       type: fields
+       fields:
+         intro:
+           label: Intro
+           type: text
+     pages:
+       type: pages
+       label: Pages
+       layout: list
+       templates:
+        - projects   # only show pages using the "page" template
+     
+    

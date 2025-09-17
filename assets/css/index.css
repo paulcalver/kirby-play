@@ -1,0 +1,95 @@
+body {
+  font-family: "Andale Mono", monospace;
+  margin-left: 50px;  /* left margin for the whole page */
+  margin-top: 50px;   /* top margin for the whole page */
+}
+
+.header {
+  position: relative;
+  padding: 20px 0;
+}
+
+/* Start hidden until JS flips the class */
+html.preload body {
+  opacity: 0;
+}
+
+/* Fade in/out */
+body {
+  opacity: 1;
+  transition: opacity 300ms ease;
+}
+
+body.page-fade-out {
+  opacity: 0;
+}
+
+.site-title {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: "Andale Mono", monospace;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.site-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.page_title {
+  font-size: 12px;      /* adjust as needed */
+  margin: 1rem 0;
+  font-weight: normal;    /* or bold if you prefer */
+}
+
+.page_title a {
+  color: inherit;         /* same colour as surrounding text */
+  text-decoration: none;  /* removes underline */
+}
+
+.random-image {
+  display: flex;
+  justify-content: flex-start; /* left */
+}
+
+.random-image img {
+  height: 200px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;     /* wraps to next line if too many images */
+  gap: 1rem;           /* space between images */
+}
+
+.image-row img {
+  height: 200px;
+  width: auto;
+  object-fit: cover;   /* crops neatly if aspect ratio varies */
+  display: block;
+}
+
+.section {
+  margin-bottom: 100px; /* adjust spacing between each page */
+}
+
+.hero-wrap {
+  min-height: 80vh;                 /* gives room to centre vertically */
+  display: flex;
+  align-items: center;              /* vertical centre */
+  justify-content: center;          /* horizontal centre */
+}
+
+#hero-image {
+  height: 80vh;                     /* 80% of viewport height */
+  width: auto;                      /* keep aspect ratio */
+  max-width: 100vw;                 /* never overflow horizontally */
+  object-fit: contain;
+  display: block;
+}

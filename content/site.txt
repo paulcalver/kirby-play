@@ -1,1 +1,5 @@
-Title: Site Title
+Title: *_*
+
+----
+
+Intro: Hello world
