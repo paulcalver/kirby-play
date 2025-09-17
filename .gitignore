@@ -1,26 +1,20 @@
-# Kirby cache, thumbs, sessions, media (inside htdocs)
+# Kirby runtime (now under htdocs)
+htdocs/site/cache/
 htdocs/media/
 htdocs/thumbs/
-htdocs/site/cache/
 htdocs/site/sessions/
 htdocs/site/accounts/
 !htdocs/site/accounts/.gitkeep
 
-# Kirby accounts (ignore unless you want to track them)
-htdocs/site/accounts/*
-
-# Allow .gitkeep if you use it in accounts
-!htdocs/site/accounts/.gitkeep
-
-# Composer dependencies
-/vendor/*
+# Composer / Node
+/vendor/
 /composer.lock
-
-# Node dependencies (for panel plugins etc.)
 /node_modules/
 /npm-debug.log
 /yarn-error.log
 
-# System file
+# Editor & OS junk
 .DS_Store
+.nova/
+_PHP Server.txt
 Thumbs.db
