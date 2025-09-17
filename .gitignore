@@ -21,6 +21,6 @@ htdocs/site/accounts/*
 /npm-debug.log
 /yarn-error.log
 
-# System files
+# System file
 .DS_Store
 Thumbs.db
