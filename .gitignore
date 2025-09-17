@@ -1,8 +1,10 @@
 # Kirby cache, thumbs, sessions, media (inside htdocs)
-htdocs/site/cache/*
-htdocs/media/*
-htdocs/thumbs/*
-htdocs/site/sessions/*
+htdocs/media/
+htdocs/thumbs/
+htdocs/site/cache/
+htdocs/site/sessions/
+htdocs/site/accounts/
+!htdocs/site/accounts/.gitkeep
 
 # Kirby accounts (ignore unless you want to track them)
 htdocs/site/accounts/*
