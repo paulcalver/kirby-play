@@ -123,3 +123,19 @@ body {
   object-fit: contain;
   display: block;
 }
+
+.project-nav {
+  margin: 0.5rem 0 1.5rem;
+}
+
+.project-nav .next-project {
+  font-size: 12px;
+  color: #000;
+  text-decoration: none;
+  font-weight: normal; /* match your title weight if needed */
+}
+
+.project-nav .next-project:hover {
+  text-decoration: none; /* keep underline off on hover too */
+  color: #000;           /* keep colour consistent */
+}

@@ -5,6 +5,17 @@
     <h1 class="page_title"><?= $page->title()->esc() ?></h1>
 
     <?php
+    // Find the next listed sibling, wrap to the first if we're at the end
+    $next = $page->nextListed() ?? $page->siblings()->listed()->first();
+    if ($next && $next->id() !== $page->id()): ?>
+      <nav class="project-nav">
+        <a class="next-project" href="<?= $next->url() ?>">
+          Next project: <?= $next->title()->esc() ?> →
+        </a>
+      </nav>
+    <?php endif; ?>
+
+    <?php
     $images = $page->images(); // adjust order if needed
     if ($images->isNotEmpty()):
       $first = $images->first();
