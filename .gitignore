@@ -1,24 +1,23 @@
-# Kirby cache and thumbs
-/site/cache/*
-/media/*
-/thumbs/*
-/site/sessions/*
+# Kirby cache, thumbs, sessions, media (inside htdocs)
+htdocs/site/cache/*
+htdocs/media/*
+htdocs/thumbs/*
+htdocs/site/sessions/*
 
-# Kirby accounts (users)
-# (ignore unless you want to track default/test accounts in Git)
-site/accounts/*
+# Kirby accounts (ignore unless you want to track them)
+htdocs/site/accounts/*
 
-# Ignore everything except .gitkeep if you use it
-!site/accounts/.gitkeep
+# Allow .gitkeep if you use it in accounts
+!htdocs/site/accounts/.gitkeep
 
 # Composer dependencies
 /vendor/*
 /composer.lock
 
-# Node dependencies (if using panel plugins with npm)
-node_modules/
-npm-debug.log
-yarn-error.log
+# Node dependencies (for panel plugins etc.)
+/node_modules/
+/npm-debug.log
+/yarn-error.log
 
 # System files
 .DS_Store
